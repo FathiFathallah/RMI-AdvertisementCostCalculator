@@ -6,7 +6,7 @@
     • Server2: Computes the cost of the advertisement using the formula: cost = days * 10 - days * 0.05.<br>4
   The client's responsibility is to determine which server to call based on the input number of days.<br>
   => If the number of days is less than or equal to 10, the client calls "Server1". Otherwise, the client calls "Server2" for cost computation.<br><br>
-Instructions
+Instructions::<br>
   Clone the repository to your local machine.<br>
   run the rmi registry on port 1099.<br>
   Compile and run the server main class ("Main.java").<br>
