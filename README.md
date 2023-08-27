@@ -5,16 +5,15 @@
     • Server1: Computes the cost of the advertisement using the formula: cost = days * 10.<br>
     • Server2: Computes the cost of the advertisement using the formula: cost = days * 10 - days * 0.05.<br>4
   The client's responsibility is to determine which server to call based on the input number of days.<br>
-  => If the number of days is less than or equal to 10, the client calls "Server1". Otherwise, the client calls "Server2" for cost computation.<br>
-  Features:
-    • User Management: Add, remove, update, and list users effortlessly. Maintain crucial user information such as userID, username, password, firstName, lastName, and status (blocked or active).<br>
-    • IP Blacklisting: Maintain a dynamic blacklist of IP addresses, preventing unauthorized access. Easily add or remove IP addresses from the blacklist to enhance security measures, similar to access lists.<br>
-    • File Control: Store user-specific files in a well-organized manner. Associate users with their respective files using the files table (userID, fileName). Actual file content is securely stored in the server's designated directory.<br>
-    • Administrative Actions: Administer user actions directly from the server software interface. Block/unblock users by their usernames or IP addresses. When blocked, users are prevented from accessing the server, and detailed block reasons are conveyed via textual messages.<br>
-  <br>
-  User Scenario:<br>
-    • User Authentication: only upon successful login, users gain access to upload and download files securely from the server. a user would get files only uploaded by his/her side.<br>
-    • Access Control: Users can be blocked based on their username and/or IP address. In such cases, the server promptly sends informative messages detailing the reasons for the block, enhancing transparency.<br>
+  => If the number of days is less than or equal to 10, the client calls "Server1". Otherwise, the client calls "Server2" for cost computation.<br><br>
+Instructions
+  Clone the repository to your local machine.<br>
+  run the rmi registry on port 1099.<br>
+  Compile and run the server main class ("Main.java").<br>
+  Compile and run the client class ("Client.java").<br>
+  The client will prompt you to enter the number of days for advertisement.<br>
+  The appropriate server will be invoked automatically to calculate the advertisement cost.<br>
+  The calculated cost will be displayed to the client (user).<br>
 <br>
   Apparatus: RMI Java modules + registry <br>
 
